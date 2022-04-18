@@ -43,7 +43,7 @@ function returnDogsArray(url) {
       let dogBreeds = breeds.message;
       for (const breed in dogBreeds) {
         dogBreeds[breed].forEach((dog) => {
-          return newDogsArr.push(dog);
+          newDogsArr.push(dog);
         });
       }
       if (select.value === "all") {

@@ -57,14 +57,8 @@ function returnDogsArray(url) {
           });
           document.getElementById("dog-breeds").appendChild(li);
         });
-      } else if (select.value === "a") {
-        filterByLetter(newDogsArr,"a")
-      } else if (select.value === "b") {
-        filterByLetter(newDogsArr, "b");
-      } else if (select.value === "c") {
-        filterByLetter(newDogsArr, "c");
-      } else if (select.value === "d") {
-        filterByLetter(newDogsArr, "d");
+      } else{
+        filterByLetter(newDogsArr,select.value)
       }
     });
 }
